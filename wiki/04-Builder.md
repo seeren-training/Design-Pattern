@@ -32,7 +32,7 @@ ___
 ```php
 abstract class MonteurPizza
 {
-    protected $pizza: Pizza;
+    protected Pizza $pizza;
 
     abstract public function monterPate(): void;
 

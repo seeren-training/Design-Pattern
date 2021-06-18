@@ -31,7 +31,7 @@ abstract class Prototype
 class NissanCar extends Prototype
 {
 
-    private $puissance: int;
+    private int $puissance;
 
     public function __construct() {
       $this->puissance = 0;
