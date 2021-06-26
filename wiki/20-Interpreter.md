@@ -21,8 +21,6 @@ Quelle solution le modèle de conception Interpreter décrit-il?
 * Représenter une phrase dans le langage par un arbre de syntaxe abstraite (AST) composé d'instances d'Expression.
 * Interprétez une phrase en appelant interpret() sur l'AST.
 
-
-
 ___
 
 ## 📑 Implémentation
