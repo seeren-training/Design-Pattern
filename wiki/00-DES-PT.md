@@ -38,8 +38,6 @@ ___
 * [Strategy](https://github.com/seeren-training/Agile/wiki/25)
 * [Template method](https://github.com/seeren-training/Agile/wiki/26)
 * [Visitor](https://github.com/seeren-training/Agile/wiki/27)
-* [[Bonus] IoC](https://github.com/seeren-training/Design-Pattern/wiki/28)
-
 
 ## Thématique
 
