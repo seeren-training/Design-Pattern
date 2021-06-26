@@ -26,7 +26,7 @@ ___
 * [Facade](https://github.com/seeren-training/Agile/wiki/13)
 * [Flyweight](https://github.com/seeren-training/Agile/wiki/14)
 * [Proxy](https://github.com/seeren-training/Agile/wiki/15)
-* [[Category] Structural](https://github.com/seeren-training/Design-Pattern/wiki/16)
+* [[Category] Comportemental](https://github.com/seeren-training/Design-Pattern/wiki/16)
 * [Chain of responsibility](https://github.com/seeren-training/Agile/wiki/17)
 * [Command](https://github.com/seeren-training/Agile/wiki/18)
 * [Interpreter](https://github.com/seeren-training/Agile/wiki/19)
