@@ -72,7 +72,6 @@ abstract class Logger
 *Members*
 
 ```php
-
 class ConsoleLogger extends Logger
 {
 
