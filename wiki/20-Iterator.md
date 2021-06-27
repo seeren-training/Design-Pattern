@@ -12,7 +12,7 @@ Quels problèmes le design pattern Iterator peut-il résoudre?
 * Les éléments d'un objet agrégé doivent être accédés et traversés sans exposer sa représentation (structures de données).
 * De nouvelles opérations de traversée doivent être définies pour un objet agrégé sans changer son interface.
 
-![image](./resources/Iterator.jpg)
+![image](https://raw.githubusercontent.com/seeren-training/Design-Pattern/master/wiki/resources/Iterator.jpg)
 
 Quelle solution le modèle de conception Iterator décrit-il ?
 

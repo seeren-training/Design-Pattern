@@ -12,7 +12,7 @@ Quels problèmes le design pattern Mediator peut-il résoudre?
 * Un couplage étroit entre un ensemble d'objets en interaction doit être évité.
 * Il devrait être possible de modifier l'interaction entre un ensemble d'objets indépendamment.
 
-![image](./resources/Mediator.jpg)
+![image](https://raw.githubusercontent.com/seeren-training/Design-Pattern/master/wiki/resources/Mediator.jpg)
 
 Quelle solution le modèle de conception Mediator décrit-il ?
 

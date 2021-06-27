@@ -13,7 +13,7 @@ Quels problèmes le design pattern Interpreter peut-il résoudre?
 
 Lorsqu'un problème survient très souvent, il peut être envisagé de le représenter sous forme de phrase dans un langage simple (Domain Specific Languages) afin qu'un interprète puisse résoudre le problème en interprétant la phrase.
 
-![image](./resources/Interpreter.jpg)
+![image](https://raw.githubusercontent.com/seeren-training/Design-Pattern/master/wiki/resources/Interpreter.jpg)
 
 Quelle solution le modèle de conception Interpreter décrit-il?
 

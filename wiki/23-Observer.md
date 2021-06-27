@@ -13,7 +13,7 @@ Quels problèmes le design pattern Observer peut-il résoudre ?
 * Il faut s'assurer que lorsqu'un objet change d'état, un nombre illimité d'objets dépendants est mis à jour automatiquement.
 * Il devrait être possible qu'un objet puisse notifier un nombre illimité d'autres objets.
 
-![image](./resources/Observer.jpg)
+![image](https://raw.githubusercontent.com/seeren-training/Design-Pattern/master/wiki/resources/Observer.jpg)
 
 Quelle solution le modèle de conception Observer décrit-il ?
 

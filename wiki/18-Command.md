@@ -14,7 +14,7 @@ L'utilisation du modèle de conception de commande peut résoudre ces problèmes
 
 L'implémentation d'une requête directement dans une classe est inflexible car elle couple la classe à une requête particulière au moment de la compilation, ce qui rend impossible la spécification d'une requête au moment de l'exécution.
 
-![image](./resources/Command.jpg)
+![image](https://raw.githubusercontent.com/seeren-training/Design-Pattern/master/wiki/resources/Command.jpg)
 
 L'utilisation du modèle de conception de commande décrit la solution suivante:
 

@@ -12,7 +12,7 @@ Ce modèle comporte deux parties principales:
 * La "méthode modèle" est implémentée en tant que méthode dans une classe de base (généralement une classe abstraite). Cette méthode contient du code pour les parties de l'algorithme global qui sont invariantes. Le modèle garantit que l'algorithme global est toujours suivi. Dans la méthode modèle, des parties de l'algorithme qui peuvent varier sont implémentées en envoyant des messages automatiques qui demandent l'exécution de méthodes d'assistance supplémentaires. Dans la classe de base, ces méthodes d'assistance reçoivent une implémentation par défaut, voire aucune (c'est-à-dire qu'il peut s'agir de méthodes abstraites).
 * Les sous-classes de la classe de base "remplissent" les parties vides ou "variantes" du "modèle" avec des algorithmes spécifiques qui varient d'une sous-classe à l'autre. Il est important que les sous-classes ne surchargent pas la méthode modèle elle-même.
 
-![image](./resources/Template-method.jpg)
+![image](https://raw.githubusercontent.com/seeren-training/Design-Pattern/master/wiki/resources/Template-method.jpg)
 
 ___
 

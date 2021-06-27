@@ -14,7 +14,7 @@ Quels problèmes le design pattern Memento peut-il résoudre ?
 
 Le problème est qu'un objet bien conçu est encapsulé de sorte que sa représentation soit cachée à l'intérieur de l'objet et ne soit pas accessible de l'extérieur de l'objet.
 
-![image](./resources/Memento.jpg)
+![image](https://raw.githubusercontent.com/seeren-training/Design-Pattern/master/wiki/resources/Memento.jpg)
 
 Quelle solution le modèle de conception Memento décrit-il ?
 

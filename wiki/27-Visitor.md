@@ -12,7 +12,7 @@ Quels problèmes le modèle de conception Visitor peut-il résoudre?
 * Il devrait être possible de définir une nouvelle opération pour certaines classes d'une structure d'objet sans changer les classes.
 * Lorsque de nouvelles opérations sont fréquemment nécessaires et que la structure de l'objet se compose de nombreuses classes non liées, il est inflexible d'ajouter de nouvelles sous-classes à chaque fois qu'une nouvelle opération est requise car la distribution de toutes ces opérations sur les différentes classes de nœuds conduit à un système difficile comprendre, maintenir et changer."
 
-![image](./resources/Visitor.jpg)
+![image](https://raw.githubusercontent.com/seeren-training/Design-Pattern/master/wiki/resources/Visitor.jpg)
 
 Quelle solution le modèle de conception Visitor décrit-il ?
 
