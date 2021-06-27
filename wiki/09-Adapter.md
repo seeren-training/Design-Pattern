@@ -14,13 +14,13 @@ Le modèle de conception de l'adaptateur résout des problèmes tels que:
 * Comment fournir une interface alternative à une classe ?
 * Souvent, une classe (déjà existante) ne peut pas être réutilisée uniquement parce que son interface n'est pas conforme à l'interface requise par les clients.
 
-![image](https://raw.githubusercontent.com/seeren-training/Design-Pattern/master/wiki/resources/adapter.png)
+![image](https://raw.githubusercontent.com/seeren-training/Design-Pattern/master/wiki/resources/Adapter.jpg)
 
 ___
 
 ## 📑 Implémentation
 
-*Adaptee*
+Adaptee
 
 ```php
 class Iphone implements Phone
@@ -46,7 +46,7 @@ class Android implements Phone
 }
 ```
 
-*Adapter*
+Adapter
 
 ```php
 class PhoneAdapter
@@ -64,7 +64,7 @@ class PhoneAdapter
 }
 ```
 
-*Utilisation*
+Utilisation
 
 ```php
 $adapter = new PhoneAdapter();

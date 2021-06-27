@@ -24,7 +24,7 @@ ___
 
 ## 📑 Implémentation
 
-*Originator*
+Originator
 
 ```php
 public class Originator
@@ -54,7 +54,7 @@ public class Originator
 }
 ```
 
-*Memento*
+Memento
 
 ```php
 class Memento
@@ -75,7 +75,7 @@ class Memento
 }
 ```
 
-*Sujet*
+Sujet
 
 ```php
 class CareTaker
@@ -95,7 +95,7 @@ class CareTaker
 }
 ```
 
-*Utilisation*
+Utilisation
 
 ```php
 $originator = new Originator();

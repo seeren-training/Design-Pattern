@@ -15,7 +15,7 @@ ___
 
 ## 📑 Implémentation
 
-*Fabrique*
+Fabrique
 
 ```php
 interface CarFactoryInterface
@@ -43,7 +43,7 @@ class CarFactory implements CarFactoryInterface
 }
 ```
 
-*Utilisation*
+Utilisation
 
 ```php
 $usine = new CarFactory();

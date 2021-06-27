@@ -12,7 +12,7 @@ Le modèle d'état est défini pour résoudre deux problèmes principaux:
 * Un objet doit changer de comportement lorsque son état interne change.
 * Le comportement spécifique à l'état doit être défini indépendamment. C'est-à-dire que l'ajout de nouveaux états ne devrait pas affecter le comportement des états existants.
 
-![image](https://raw.githubusercontent.com/seeren-training/Design-Pattern/master/wiki/resources/State.png)
+![image](https://raw.githubusercontent.com/seeren-training/Design-Pattern/master/wiki/resources/State.jpg)
 
 L'implémentation d'un comportement spécifique à un état directement dans une classe est inflexible car elle engage la classe dans un comportement particulier et rend impossible l'ajout d'un nouvel état ou la modification ultérieure du comportement d'un état existant indépendamment (sans modifier) ​​la classe. En cela, le modèle décrit deux solutions :
 
@@ -23,7 +23,7 @@ ___
 
 ## 📑 Implémentation
 
-*State*
+State
 
 ```php
 interface State
@@ -55,7 +55,7 @@ class MultipleUpperCaseState implements State
 }
 ```
 
-*Context*
+Context
 
 ```php
 class StateContext
@@ -81,7 +81,7 @@ class StateContext
 }
 ```
 
-*Utilisation*
+Utilisation
 
 ```php
 $context = new StateContext();

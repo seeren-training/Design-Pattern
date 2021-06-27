@@ -17,7 +17,7 @@ ___
 
 ## 📑 Implémentation
 
-*Sous système*
+Sous système
 
 ```php
 class CPU
@@ -36,7 +36,7 @@ class Memory
 }
 ```
 
-*Facade*
+Facade
 
 ```php
 class ComputerFacade
@@ -58,7 +58,7 @@ class ComputerFacade
 }
 ```
 
-*Utilisation*
+Utilisation
 
 ```php
 new ComputerFacade();

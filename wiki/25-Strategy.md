@@ -15,7 +15,7 @@ ___
 
 ## 📑 Implémentation
 
-*Aggregator*
+Aggregator
 
 ```php
 class Warrior implements Weapon
@@ -36,7 +36,7 @@ class Warrior implements Weapon
 }
 ```
 
-*Strategies*
+Strategies
 
 ```php
 interface Weapon
@@ -67,7 +67,7 @@ class Sword implements Weapon
 }
 ```
 
-*Utilisation*
+Utilisation
 
 ```php
 $warior = new Warior();

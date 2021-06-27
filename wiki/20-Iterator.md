@@ -23,7 +23,7 @@ ___
 
 ## 📑 Implémentation
 
-*Iterator*
+Iterator
 
 ```php
 class BookList implements Iterator
@@ -67,7 +67,7 @@ class BookList implements Iterator
 }
 ```
 
-*Utilisation*
+Utilisation
 
 ```php
 $bookList = (new BookList())

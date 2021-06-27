@@ -27,7 +27,7 @@ ___
 
 ## 📑 Implémentation
 
-*Command*
+Command
 
 ```php
 
@@ -47,7 +47,7 @@ public class SwitchCommand implements Command
 }
 ```
 
-*Receiver*
+Receiver
 
 ```php
 interface Command 
@@ -76,7 +76,7 @@ public class FlipDownCommand implements Command
 }
 ```
 
-*Utilisation*
+Utilisation
 
 ```php
 $command = new SwitchCommand();

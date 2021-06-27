@@ -25,7 +25,7 @@ ___
 
 ## 📑 Implémentation
 
-*Expression*
+Expression
 
 ```php
 interface Expression
@@ -34,7 +34,7 @@ interface Expression
 }
 ```
 
-*Terminal expression*
+Terminal expression
 
 ```php
 class TerminalExpression implements Expression 
@@ -55,7 +55,7 @@ class TerminalExpression implements Expression
 }
 ```
 
-*Non Terminal expression*
+Non Terminal expression
 
 ```php
 class OrExpression implements Expression 
@@ -101,7 +101,7 @@ class AndExpression implements Expression
 }
 ```
 
-*Utilisation*
+Utilisation
 
 ```php
 $person1 = new TerminalExpression("Kushagra");

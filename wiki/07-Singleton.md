@@ -15,7 +15,7 @@ ___
 
 ## 📑 Implémentation
 
-*Singleton*
+Singleton
 
 ```php
 class Singleton
@@ -37,7 +37,7 @@ class Singleton
 }
 ```
 
-*Utilisation*
+Utilisation
 
 ```php
 $singleton = Singleton::getInstance();

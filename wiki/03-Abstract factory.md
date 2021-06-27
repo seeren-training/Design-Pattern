@@ -9,7 +9,7 @@ ___
 
 L'Abstract factory fournit un moyen d'encapsuler un groupe de facory individuelles qui ont un thème commun sans spécifier leurs classes concrètes.
 
-![image](https://raw.githubusercontent.com/seeren-training/Design-Pattern/master/wiki/resources/Abstract_factory.svg)
+![image](https://raw.githubusercontent.com/seeren-training/Design-Pattern/master/wiki/resources/Abstract-factory.jpg)
 
 En utilisation normale, le logiciel client crée une implémentation concrète de la fabrique abstraite puis utilise l'interface générique de la fabrique pour créer les objets concrets qui font partie du thème. Le client ne sait pas (ou ne se soucie pas) quels objets concrets il obtient de chacune de ces usines internes, puisqu'il n'utilise que les interfaces génériques de leurs produits.
 
@@ -19,7 +19,7 @@ ___
 
 ## 📑 Implémentation
 
-*Fabrique*
+Fabrique
 
 ```php
 interface GUIFactory
@@ -44,7 +44,7 @@ class OSXFactory implements GUIFactory
 }
 ```
 
-*Produits*
+Produits
 
 ```php
 interface Button
@@ -69,7 +69,7 @@ class OSXButton implements Button
 }
 ```
 
-*Utilisation*
+Utilisation
 
 ```php
 $factory = 'osx' === $sys ? new OSXFactory() : new WinFactory();

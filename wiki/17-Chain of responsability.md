@@ -26,7 +26,7 @@ ___
 
 ## 📑 Implémentation
 
-*Handler*
+Handler
 
 ```php
 abstract class Logger
@@ -69,7 +69,7 @@ abstract class Logger
 }
 ```
 
-*Members*
+Members
 
 ```php
 class ConsoleLogger extends Logger
@@ -103,7 +103,7 @@ class FileLogger extends Logger
 }
 ```
 
-*Utilisation*
+Utilisation
 
 ```php
 $logger = new ConsoleLogger(Logger::ALL);

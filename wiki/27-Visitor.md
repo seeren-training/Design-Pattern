@@ -26,7 +26,7 @@ ___
 
 ## 📑 Implémentation
 
-*Subject*
+Subject
 
 ```php
 abstract class InputValue
@@ -70,7 +70,7 @@ class MultipleInputValue extends InputValue
 }
 ```
 
-*Visitor*
+Visitor
 
 ```php
 interface InputVisitor
@@ -118,7 +118,7 @@ class AscendingSort implements Visitor
 
 ```
 
-*Utilisation*
+Utilisation
 
 ```php
 $userId = new SingleInputValue("42");

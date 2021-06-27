@@ -12,7 +12,7 @@ Quels problèmes le modèle de conception proxy peut-il résoudre ?
 * L'accès à un objet doit être contrôlé.
 * Des fonctionnalités supplémentaires doivent être fournies lors de l'accès à un objet.
 
-![image](https://raw.githubusercontent.com/seeren-training/Design-Pattern/master/wiki/resources/Proxy.png)
+![image](https://raw.githubusercontent.com/seeren-training/Design-Pattern/master/wiki/resources/Proxy.jpg)
 
 Lors de l'accès à des objets sensibles, par exemple, il doit être possible de vérifier que les clients disposent des droits d'accès nécessaires.
 
@@ -20,7 +20,7 @@ ___
 
 ## 📑 Implémentation
 
-*Sujet*
+Sujet
 
 ```php
 class Image
@@ -47,7 +47,7 @@ class Image
 }
 ```
 
-*Proxy*
+Proxy
 
 ```php
 class ProxyImage implements Image
@@ -73,7 +73,7 @@ class ProxyImage implements Image
 }
 ```
 
-*Utilisation*
+Utilisation
 
 ```php
 $image1 = new ProxyImage("Photo1");

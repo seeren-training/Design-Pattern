@@ -9,7 +9,7 @@ ___
 
 Le modèle de prototype est un modèle de conception de création dans le développement de logiciels. Il est utilisé lorsque le type d'objets à créer est déterminé par une instance prototypique, qui est clonée pour produire de nouveaux objets.
 
-![image](https://raw.githubusercontent.com/seeren-training/Design-Pattern/master/wiki/resources/prototype.png)
+![image](https://raw.githubusercontent.com/seeren-training/Design-Pattern/master/wiki/resources/Prototype.jpg)
 
 Ce modèle est utilisé pour :
 
@@ -20,7 +20,7 @@ ___
 
 ## 📑 Implémentation
 
-*Protptype*
+Protptype
 
 ```php
 abstract class Prototype
@@ -49,7 +49,7 @@ class NissanCar extends Prototype
 }
 ```
 
-*Utilisation*
+Utilisation
 
 ```php
 $carA = new NissanCar();

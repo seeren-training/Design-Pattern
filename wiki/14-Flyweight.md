@@ -9,7 +9,7 @@ ___
 
 Le modèle de poids mouche est utile lorsque vous traitez un grand nombre d'objets avec des éléments répétés simples qui utiliseraient une grande quantité de mémoire s'ils étaient stockés individuellement. Il est courant de conserver les données partagées dans des structures de données externes et de les transmettre temporairement aux objets lorsqu'ils sont utilisés.
 
-![image](https://raw.githubusercontent.com/seeren-training/Design-Pattern/master/wiki/resources/Flyweight.png)
+![image](https://raw.githubusercontent.com/seeren-training/Design-Pattern/master/wiki/resources/Flyweight.jpg)
 
 Les objets poids mouche peuvent:
 
@@ -20,7 +20,7 @@ ___
 
 ## 📑 Implémentation
 
-*Invariant*
+Invariant
 
 ```php
 class Coffee
@@ -41,7 +41,7 @@ class Coffee
 }
 ```
 
-*Variant*
+Variant
 
 ```php
 class Order
@@ -63,7 +63,7 @@ class Order
 }
 ```
 
-*Client*
+Client
 
 ```php
 class CoffeeShop
@@ -84,7 +84,7 @@ class CoffeeShop
 }
 ```
 
-*Utilisation*
+Utilisation
 
 ```php
 $coffeeShop = new CoffeeShop();

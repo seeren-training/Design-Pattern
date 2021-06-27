@@ -23,7 +23,7 @@ ___
 
 ## 📑 Implémentation
 
-*Observer*
+Observer
 
 ```php
 abstract class Observer
@@ -34,7 +34,7 @@ abstract class Observer
 }
 ```
 
-*Subject*
+Subject
 
 ```php
 abstract class Subject
@@ -65,7 +65,7 @@ abstract class Subject
 }
 ```
 
-*Concrete Observer*
+Concrete Observer
 
 ```php
 class ConcreteLoggerObserver extends Observer
@@ -79,7 +79,7 @@ class ConcreteLoggerObserver extends Observer
 }
 ```
 
-*Concrete Subject*
+Concrete Subject
 
 ```php
 class ConcreteFileReaderSubject extends Subject
@@ -107,7 +107,7 @@ class ConcreteFileReaderSubject extends Subject
 }
 ```
 
-*Utilisation*
+Utilisation
 
 ```php
 $logger = new ConcreteLoggerObserver();

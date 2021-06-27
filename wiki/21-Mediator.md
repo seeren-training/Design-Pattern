@@ -23,7 +23,7 @@ ___
 
 ## 📑 Implémentation
 
-*Mediator*
+Mediator
 
 ```php
 class ChatRoom
@@ -41,7 +41,7 @@ class ChatRoom
 }
 ```
 
-*Colleagues*
+Colleagues
 
 ```php
 class User
@@ -67,7 +67,7 @@ class User
 }
 ```
 
-*Utilisation*
+Utilisation
 
 ```php
 $robert = new User("Robert");

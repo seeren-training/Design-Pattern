@@ -18,7 +18,7 @@ ___
 
 ## 📑 Implémentation
 
-*Template*
+Template
 
 ```php
 abstract class Game
@@ -40,7 +40,7 @@ abstract class Game
 }
 ```
 
-*Algo*
+Algo
 
 ```php
 class Mario extends Game
@@ -84,7 +84,7 @@ class Tankfight extends Game
 }
 ```
 
-*Utilisation*
+Utilisation
 
 ```php
 $game = new Tankfight();

@@ -9,13 +9,13 @@ ___
 
 Un décorateur permet d'attacher dynamiquement de nouvelles responsabilités à un objet. Les décorateurs offrent une alternative assez souple à l'héritage pour composer de nouvelles fonctionnalités. 
 
-![image](https://raw.githubusercontent.com/seeren-training/Design-Pattern/master/wiki/resources/Decorator.png)
+![image](https://raw.githubusercontent.com/seeren-training/Design-Pattern/master/wiki/resources/Decorator.jpg)
 
 ___
 
 ## 📑 Implémentation
 
-*Sujet*
+Sujet
 
 ```php
 interface Displayable
@@ -41,7 +41,7 @@ class Message implements Displayable
 }
 ```
 
-*Decorateur*
+Decorateur
 
 ```php
 abstract class MessageDecorator implements Displayable
@@ -69,7 +69,7 @@ class BoldMessage extends MessageDecorator
 }
 ```
 
-*Utilisation*
+Utilisation
 
 ```php
 $message = new BoldMessage(new Message("Hello World"));
