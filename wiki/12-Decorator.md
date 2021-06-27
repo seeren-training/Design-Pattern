@@ -9,7 +9,7 @@ ___
 
 Un décorateur permet d'attacher dynamiquement de nouvelles responsabilités à un objet. Les décorateurs offrent une alternative assez souple à l'héritage pour composer de nouvelles fonctionnalités. 
 
-![image](./resources/Decorator.png)
+![image](https://raw.githubusercontent.com/seeren-training/Design-Pattern/master/wiki/resources/Decorator.png)
 
 ___
 

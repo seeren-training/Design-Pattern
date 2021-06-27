@@ -12,7 +12,7 @@ Quels problèmes le modèle de conception proxy peut-il résoudre ?
 * L'accès à un objet doit être contrôlé.
 * Des fonctionnalités supplémentaires doivent être fournies lors de l'accès à un objet.
 
-![image](./resources/Proxy.png)
+![image](https://raw.githubusercontent.com/seeren-training/Design-Pattern/master/wiki/resources/Proxy.png)
 
 Lors de l'accès à des objets sensibles, par exemple, il doit être possible de vérifier que les clients disposent des droits d'accès nécessaires.
 

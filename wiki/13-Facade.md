@@ -9,7 +9,7 @@ ___
 
 La façade a pour but de cacher une conception et une interface complexe difficile à comprendre. 
 
-![image](./resources/Facade.png)
+![image](https://raw.githubusercontent.com/seeren-training/Design-Pattern/master/wiki/resources/Facade.png)
 
 La façade permet de simplifier cette complexité en fournissant une interface simple du sous-système. Habituellement, la façade est réalisée en réduisant les fonctionnalités de ce dernier, mais en fournissant toutes les fonctions nécessaires à la plupart des utilisateurs. 
 

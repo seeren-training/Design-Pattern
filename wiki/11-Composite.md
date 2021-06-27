@@ -9,7 +9,7 @@ ___
 
 Le patron composite propose une structure récursive permettant d'implémenter avec la même interface logicielle sur les feuilles et les composites afin qu'ils soient manipulés de la même manière1. 
 
-![image](./resources/Composite.png)
+![image](https://raw.githubusercontent.com/seeren-training/Design-Pattern/master/wiki/resources/Composite.png)
 
 ___
 

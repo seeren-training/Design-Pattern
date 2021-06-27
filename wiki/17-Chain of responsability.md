@@ -14,7 +14,7 @@ Quels problèmes le modèle de conception de la chaîne de responsabilité peut-
 
 L'implémentation d'une requête directement dans la classe qui envoie la requête est inflexible car elle couple la classe à un récepteur particulier et rend impossible la prise en charge de plusieurs récepteurs.
 
-![image](./resources/Chain-of-responsability.jpg)
+![image](https://raw.githubusercontent.com/seeren-training/Design-Pattern/master/wiki/resources/Chain-of-responsability.jpg)
 
 Quelle solution le modèle de conception de la chaîne de responsabilité décrit-il ?
 

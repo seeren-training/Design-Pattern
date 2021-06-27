@@ -5,7 +5,7 @@
 *  🔖 **GRASP**
 *  🔖 **SOLID**
 
-![image](./resources/design-pattern.jpg)
+![image](https://raw.githubusercontent.com/seeren-training/Design-Pattern/master/wiki/resources/design-pattern.jpg)
 
 ___
 

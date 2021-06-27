@@ -10,7 +10,7 @@ ___
 Le pont permet de découpler l'interface d'une classe et son implémentation.
 La partie concrète peut alors varier, indépendamment de celle abstraite, tant qu'elle respecte le contrat de réécriture associé qui les lie 
 
-![image](./resources/Bridge.png)
+![image](https://raw.githubusercontent.com/seeren-training/Design-Pattern/master/wiki/resources/Bridge.png)
 
 Ne pas confondre ce patron avec l'adaptateur, qui est utilisé pour adapter l'interface d'un type vers un autre type, et donc faire en sorte qu'une ou plusieurs classes intègrent un type issu d'une interface en particulier.
 

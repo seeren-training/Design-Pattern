@@ -9,7 +9,7 @@ ___
 
 Dans la programmation basée sur les classes, le modèle de méthode d'usine est un modèle de création qui utilise des méthodes d'usine pour résoudre le problème de la création d'objets sans avoir à spécifier la classe exacte de l'objet qui sera créé. Cela se fait en créant des objets en appelant une méthode de fabrique, soit spécifiée dans une interface et implémentée par des classes enfants, soit implémentée dans une classe de base et éventuellement remplacée par des classes dérivées, plutôt qu'en appelant un constructeur.
 
-![image](./resources/factory-method.jpg)
+![image](https://raw.githubusercontent.com/seeren-training/Design-Pattern/master/wiki/resources/factory-method.jpg)
 
 ___
 

@@ -14,7 +14,7 @@ Le modèle de conception de l'adaptateur résout des problèmes tels que:
 * Comment fournir une interface alternative à une classe ?
 * Souvent, une classe (déjà existante) ne peut pas être réutilisée uniquement parce que son interface n'est pas conforme à l'interface requise par les clients.
 
-![image](./resources/adapter.png)
+![image](https://raw.githubusercontent.com/seeren-training/Design-Pattern/master/wiki/resources/adapter.png)
 
 ___
 

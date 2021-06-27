@@ -12,7 +12,7 @@ Le modèle de conception Builder résout des problèmes tels que :
 * Comment une classe (le même processus de construction) peut-elle créer différentes représentations d'un objet complexe ?
 * Comment simplifier une classe qui inclut la création d'un objet complexe ?
 
-![image](./resources/Builder.png)
+![image](https://raw.githubusercontent.com/seeren-training/Design-Pattern/master/wiki/resources/Builder.png)
 
 Créer et assembler les parties d'un objet complexe directement dans une classe est inflexible. Il engage la classe à créer une représentation particulière de l'objet complexe et rend impossible la modification ultérieure de la représentation indépendamment (sans avoir à changer) la classe.
 
