@@ -2,20 +2,22 @@
 
 namespace App\Model;
 
-class MagicCard implements CardInterface
+use App\Prototype\PrototypeInterface;
+
+class MagicCard implements CardInterface, PrototypeInterface
 {
 
-    private string $name;
+    private  string $name;
 
-    private string $manaCoast;
+    private  string $manaCoast;
 
-    private array $colors;
+    private  array $colors;
 
-    private string $type;
+    private  string $type;
 
-    private string $text;
+    private  string $text;
 
-    private string $imageUrl;
+    private  string $imageUrl;
 
     public function getName(): string
     {

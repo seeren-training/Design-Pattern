@@ -12,14 +12,17 @@ class MagicCardFactory
 
     private CardBuilderInterface $builder;
 
+    private CardInterface $card;
+
     public function __construct()
     {
         $this->builder = new MagicCardBuilder();
+        $this->card = new MagicCard();
     }
 
     public function create(\stdClass $stdCard): CardInterface
     {
-        $card = new MagicCard();
+        $card = clone $this->card;
         $this->builder->build($stdCard, $card);
         return $card;
     }
