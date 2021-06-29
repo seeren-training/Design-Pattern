@@ -2,6 +2,8 @@
 
 namespace App\Model;
 
-interface CardInterface
+use App\Prototype\PrototypeInterface;
+
+interface CardInterface extends PrototypeInterface
 {
 }
