@@ -2,16 +2,19 @@
 
 namespace App\Controller;
 
+use App\Controller\Trait\RenderTrait;
 use App\Services\CardService;
 
 class CardController
 {
 
-    public function showAll (): void
+    use RenderTrait;
+
+    public function showAll(): void
     {
-        $service = new CardService();
-        $cards = $service->find();
-        var_dump($cards);
+        $this->render("card/show_all.html.php", [
+            "cards" => (new CardService())->find()
+        ]);
     }
 
 }

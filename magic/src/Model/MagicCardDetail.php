@@ -5,7 +5,7 @@ namespace App\Model;
 class MagicCardDetail extends MagicCard
 {
 
-    private string $manaCoast;
+    private string $manaCost;
 
     private array $colors;
 
@@ -13,14 +13,14 @@ class MagicCardDetail extends MagicCard
 
     private string $text;
 
-    public function getManaCoast(): string
+    public function getmanaCost(): string
     {
-        return $this->manaCoast;
+        return $this->manaCost;
     }
 
-    public function setManaCoast(string $manaCoast): void
+    public function setmanaCost(string $manaCost): void
     {
-        $this->manaCoast = $manaCoast;
+        $this->manaCost = $manaCost;
     }
 
     public function getColors(): array

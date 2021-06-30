@@ -29,4 +29,8 @@ class MagicCard implements CardInterface
         $this->imageUrl = $imageUrl;
     }
 
+    public function __clone(): void
+    {
+    }
+
 }
