@@ -15,12 +15,12 @@
         <a class="navbar-brand" href="/">Magic Card</a>
         <div class="dropdown">
         <form class="justify-content-start">
-            <a class="btn btn-secondary btn-sm">All</a>
-            <a class="btn btn-danger btn-sm">Red</a>
-            <a class="btn btn-success btn-sm">Green</a>
-            <a class="btn btn-primary btn-sm">Blue</a>
-            <a class="btn btn-light btn-sm">White</a>
-            <a class="btn btn-dark btn-sm">Dark</a>
+            <a href="?" class="btn btn-secondary btn-sm">All</a>
+            <a href="?color=red" a class="btn btn-danger btn-sm">Red</a>
+            <a href="?color=green" class="btn btn-success btn-sm">Green</a>
+            <a href="?color=blue" class="btn btn-primary btn-sm">Blue</a>
+            <a href="?color=white"class="btn btn-light btn-sm">White</a>
+            <a href="?color=black" class="btn btn-dark btn-sm">Dark</a>
         </form>
     </div>
 </nav>

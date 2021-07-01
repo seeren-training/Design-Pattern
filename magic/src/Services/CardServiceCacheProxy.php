@@ -11,12 +11,15 @@ class CardServiceCacheProxy extends CardService
 
     public function __construct()
     {
+        parent::__construct();
         $this->service = new CardService();
     }
 
     public function find(int $type = CardFactoryInterface::BASIC): array
     {
-        $filename = __DIR__ . "/../../var/cache/cards";
+        $filename = __DIR__ . "/../../var/cache/"
+            . md5("card" . http_build_query($this->getOptions()))
+            . ".cache";
         if (is_file($filename)) {
             $content = file_get_contents($filename);
             return unserialize($content);

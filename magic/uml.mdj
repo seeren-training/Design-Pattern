@@ -653,9 +653,9 @@
 							"font": "Arial;22;0",
 							"left": 88,
 							"top": 48,
-							"width": 417,
+							"width": 609,
 							"height": 56,
-							"text": "Magic Card Overview: Pattern Creation"
+							"text": "Magic Card Overview: Pattern Comportemental"
 						},
 						{
 							"_type": "UMLClassView",
