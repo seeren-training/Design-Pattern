@@ -8,7 +8,7 @@ use App\Factory\MagicCardFactory;
 abstract class AbstractCardService
 {
 
-    abstract protected function getOptions(): array;
+    abstract public function getOptions(): array;
 
     public function find(int $type = CardFactoryInterface::BASIC): array
     {

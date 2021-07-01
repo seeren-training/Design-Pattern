@@ -20,6 +20,7 @@ class CardService extends AbstractCardService
     public function __construct()
     {
         $color = filter_input(INPUT_GET, "color");
+        $page = filter_input(INPUT_GET, "page", FILTER_VALIDATE_INT);
         if (self::RED === $color
             || self::GREEN === $color
             || self::BLUE === $color
@@ -27,9 +28,13 @@ class CardService extends AbstractCardService
             || self::BLACK === $color) {
             $this->options["colors"] = $color;
         }
+        if (!$page) {
+            $page = 1;
+        }
+        $this->options["page"] = $page;
     }
 
-    protected function getOptions(): array
+    public function getOptions(): array
     {
         return $this->options;
     }

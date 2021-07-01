@@ -12,8 +12,17 @@ class CardController
 
     public function showAll(): void
     {
+        $service = new CardServiceCacheProxy();
+        $cards = $service->find();
+        $options = $service->getOptions();
+        if (!$cards) {
+            $options["page"] = 1;
+            header("Location: /?" . http_build_query($options));
+            exit();
+        }
         $this->render("card/show_all.html.php", [
-            "cards" => (new CardServiceCacheProxy())->find()
+            "cards" => $cards,
+            "options" => $options,
         ]);
     }
 
