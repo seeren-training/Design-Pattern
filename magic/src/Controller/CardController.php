@@ -16,14 +16,21 @@ class CardController
         $cards = $service->find();
         $options = $service->getOptions();
         if (!$cards) {
-            $options["page"] = 1;
-            header("Location: /?" . http_build_query($options));
+            header("Location: /?" . http_build_query([
+                    "color" => $options["colors"] ?? null,
+                    "page" =>  1
+                ]));
             exit();
         }
         $this->render("card/show_all.html.php", [
             "cards" => $cards,
             "options" => $options,
         ]);
+    }
+
+    public function show(string $name,): void
+    {
+        echo $name;
     }
 
 }
