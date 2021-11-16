@@ -1,21 +1,25 @@
 <?php
 
-
-/**
- * Pour les URL
- *
- * "/cards" il faut exécuter la méthode "showAll" du CardController
- * "/cards/3"
- * "/cards/4"
- * "/cards/5" il faut exécuter la méthode "show" du CardController
- * Si possible cette méthode déclare en paramètre entrant d'id capturé
- */
-
-
 include './../vendor/autoload.php';
 
-$routes = [];
+$routes = [
+    '/cards' => [
+        'controller' => \App\Controller\CardController::class,
+        'action' => 'showAll'
+    ]
+];
 
-foreach ($routes as $route) {
+$userPath = filter_input(INPUT_SERVER, 'PATH_INFO');
+if (!$userPath) {
+    $userPath = filter_input(INPUT_SERVER, 'REDIRECT_URL');
+    if (!$userPath) {
+        $userPath = '/';
+    }
+}
 
+foreach ($routes as $path => $route) {
+    if ($userPath === $path) {
+        $controller = new $route['controller']();
+        $controller->{$route['action']}();
+    }
 }
