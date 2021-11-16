@@ -6,7 +6,9 @@
             "email": "consultant@seeren.fr"
         }
     ],
-    "require": {},
+    "require": {
+
+    },
     "autoload": {
         "psr-4": {
             "App\\": "src/"
