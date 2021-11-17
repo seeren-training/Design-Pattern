@@ -2,7 +2,7 @@
 
 namespace App\Model;
 
-class Card
+class Card implements CardInterface
 {
 
     private string $name;
