@@ -2,7 +2,6 @@
 
 include './../vendor/autoload.php';
 
-
 $routes = [
     '/cards' => [
         'controller' => \App\Controller\CardController::class,
