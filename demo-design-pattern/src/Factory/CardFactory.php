@@ -2,14 +2,25 @@
 
 namespace App\Factory;
 
+use App\Builder\CardBuilder;
+use App\Model\Card;
 use App\Model\CardInterface;
 
 class CardFactory
 {
 
-    public function create(): CardInterface
+    private CardBuilder $builder;
+
+    public function __construct()
     {
-        return new \App\Model\Card();
+        $this->builder = new CardBuilder();
+    }
+
+    public function create(array $jsonCard): CardInterface
+    {
+        $card = new Card();
+        $this->builder->build($card, $jsonCard);
+        return $card;
     }
 
 }

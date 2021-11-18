@@ -2,6 +2,8 @@
 
 namespace App\Controller;
 
+use App\Factory\CardFactory;
+
 class CardController
 {
 
@@ -9,10 +11,11 @@ class CardController
     {
         $content = file_get_contents('https://api.magicthegathering.io/v1/cards');
         $json = json_decode($content, true);
-        $factory = new \App\Factory\CardFactory();
         $cards = [];
+        $factory = new CardFactory();
         foreach ($json['cards'] as $jsonCard) {
-            array_push($cards, $factory->create());
+            $card = $factory->create($jsonCard);
+            array_push($cards, $card);
         }
         var_dump($cards);
     }
