@@ -9,15 +9,14 @@ class CardController
 
     public function showAll()
     {
-        $content = file_get_contents('https://api.magicthegathering.io/v1/cards');
-        $json = json_decode($content, true);
         $cards = [];
         $factory = new CardFactory();
+        $content = file_get_contents('https://api.magicthegathering.io/v1/cards');
+        $json = json_decode($content, true);
         foreach ($json['cards'] as $jsonCard) {
-            $card = $factory->create($jsonCard);
-            array_push($cards, $card);
+            array_push($cards, $factory->create($jsonCard));
         }
-        var_dump($cards);
+        include __DIR__ . '/../../templates/card/show_all.html.php';
     }
 
     public function show($id)

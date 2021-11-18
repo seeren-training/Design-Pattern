@@ -15,7 +15,7 @@ class CardBuilder
             ->setName($jsonCard['name'])
             ->setDescription($jsonCard['text'] ?? null)
             ->setManaCost($jsonCard['manaCost'] ?? null)
-            ->setImage($jsonCard['imageUrl'] ?? null)
+            ->setImage($jsonCard['imageUrl'] ?? 'https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=0&type=card')
             ->setColors($jsonCard['colors'] ?? null)
             ->setTypes($jsonCard['types'] ?? null);
     }
