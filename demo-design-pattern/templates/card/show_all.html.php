@@ -2,9 +2,11 @@
 
     <div class="container">
         <div class="row my-4">
-            <?php foreach ($cards ?? []  as $card): ?>
+            <?php foreach ($cards ?? [] as $card): ?>
                 <div class="col col-6 col-sm-4 col-md-3 col-lg-2 mb-3">
-                    <img title="<?= $card->getName() ?>" class="w-100" src="<?= $card->getImage() ?>">
+                    <a href="/<?= $card->getName() ?>">
+                        <img title="<?= $card->getName() ?>" class="w-100" src="<?= $card->getImage() ?>">
+                    </a>
                 </div>
             <?php endforeach ?>
         </div>
@@ -15,7 +17,7 @@
                         <a class="page-link" href="#">Previous</a>
                     </li>
                     <li class="page-item">
-                        <a class="page-link" href="#">1</a>
+                        <a class="page-link" href="">1</a>
                     </li>
                     <li class="page-item">
                         <a class="page-link" href="#">Next</a>

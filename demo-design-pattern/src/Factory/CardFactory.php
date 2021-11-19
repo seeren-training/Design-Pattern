@@ -2,8 +2,8 @@
 
 namespace App\Factory;
 
-use App\Builder\CardBuilder;
 use App\Model\Card;
+use App\Builder\CardBuilder;
 use App\Model\CardInterface;
 
 class CardFactory
@@ -25,13 +25,14 @@ class CardFactory
         $this->card = new Card();
     }
 
-    public function create(array $jsonCard, int $type = self::DEFAULT): CardInterface
+    public function create(
+        array $jsonCard,
+        int $type = self::DEFAULT): CardInterface
     {
-        if (self::DEFAULT === $type) {
-            $card = clone $this->card;
-        } else {
+        if (self::DEFAULT !== $type) {
             throw new \InvalidArgumentException('Do not support other options');
         }
+        $card = clone $this->card;
         $this->builder->build($card, $jsonCard);
         return $card;
     }

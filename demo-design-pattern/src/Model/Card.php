@@ -22,7 +22,7 @@ class Card implements CardInterface
         return $this->name;
     }
 
-    public function setName(string $name): Card
+    public function setName(string $name): self
     {
         $this->name = $name;
         return $this;
@@ -33,7 +33,7 @@ class Card implements CardInterface
         return $this->description;
     }
 
-    public function setDescription(?string $description): Card
+    public function setDescription(?string $description): self
     {
         $this->description = $description;
         return $this;
@@ -44,7 +44,7 @@ class Card implements CardInterface
         return $this->image;
     }
 
-    public function setImage(?string $image): Card
+    public function setImage(?string $image): self
     {
         $this->image = $image;
         return $this;
@@ -55,7 +55,7 @@ class Card implements CardInterface
         return $this->manaCost;
     }
 
-    public function setManaCost(?string $manaCost): Card
+    public function setManaCost(?string $manaCost): self
     {
         $this->manaCost = $manaCost;
         return $this;
@@ -66,7 +66,7 @@ class Card implements CardInterface
         return $this->colors;
     }
 
-    public function setColors(?array $colors): Card
+    public function setColors(?array $colors): self
     {
         $this->colors = $colors;
         return $this;
@@ -77,7 +77,7 @@ class Card implements CardInterface
         return $this->types;
     }
 
-    public function setTypes(?array $types): Card
+    public function setTypes(?array $types): self
     {
         $this->types = $types;
         return $this;

@@ -3,23 +3,25 @@
 include './../vendor/autoload.php';
 
 $routes = [
-    '/cards' => [
+    '/' => [
         'controller' => \App\Controller\CardController::class,
         'action' => 'showAll'
+    ],
+    '/(.+)' => [
+        'controller' => \App\Controller\CardController::class,
+        'action' => 'show'
     ]
 ];
 
 $userPath = filter_input(INPUT_SERVER, 'PATH_INFO');
 if (!$userPath) {
-    $userPath = filter_input(INPUT_SERVER, 'REDIRECT_URL');
-    if (!$userPath) {
-        $userPath = '/';
-    }
+    $userPath = filter_input(INPUT_SERVER, 'REDIRECT_URL') ?? '/';
 }
 
 foreach ($routes as $path => $route) {
-    if ($userPath === $path) {
+    if (preg_match('#^' . $path . '$#', $userPath, $matches)) {
+        array_shift($matches);
         $controller = new $route['controller']();
-        $controller->{$route['action']}();
+        $controller->{$route['action']}(... $matches);
     }
 }
