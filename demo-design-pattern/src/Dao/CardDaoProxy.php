@@ -2,7 +2,7 @@
 
 namespace App\Dao;
 
-class CardDaoProxy
+class CardDaoProxy extends CardDao
 {
 
     public function fetchCards(): array
@@ -12,8 +12,7 @@ class CardDaoProxy
             $content = file_get_contents($filename);
             return unserialize($content);
         }
-        $cardDao = new CardDao();
-        $cards = $cardDao->fetchCards();
+        $cards = parent::fetchCards();
         file_put_contents($filename, serialize($cards));
         return $cards;
     }
