@@ -21,6 +21,7 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#">All</a>
                 </li>
+<!--                Ajouter une couleur en paramètres pour chaque lien-->
                 <li class="nav-item">
                     <a class="nav-link" href="#">White</a>
                 </li>

@@ -10,7 +10,9 @@ class CardController
 
     public function showAll()
     {
+        // Controller, valider, la donnée
         $cardDaoProxy = new CardDaoProxy();
+        // Fournir le paramètre de couleur
         $cards = $cardDaoProxy->fetchCards();
         include __DIR__ . '/../../templates/card/show_all.html.php';
     }
