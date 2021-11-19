@@ -2,6 +2,7 @@
 
 namespace App\Controller;
 
+use App\Dao\CardDaoProxy;
 use App\Factory\CardFactory;
 
 class CardController
@@ -9,13 +10,8 @@ class CardController
 
     public function showAll()
     {
-        $cards = [];
-        $factory = new CardFactory();
-        $content = file_get_contents('https://api.magicthegathering.io/v1/cards');
-        $json = json_decode($content, true);
-        foreach ($json['cards'] as $jsonCard) {
-            array_push($cards, $factory->create($jsonCard));
-        }
+        $cardDaoProxy = new CardDaoProxy();
+        $cards = $cardDaoProxy->fetchCards();
         include __DIR__ . '/../../templates/card/show_all.html.php';
     }
 
