@@ -1,10 +1,10 @@
 <?php include __DIR__ . '/../header.html.php' ?>
 
-    <div class="container">
+    <section class="container">
         <div class="row my-4">
             <?php foreach ($cards ?? [] as $card): ?>
                 <div class="col col-6 col-sm-4 col-md-3 col-lg-2 mb-3">
-                    <a href="/<?= $card->getName() ?>">
+                    <a href="/<?= urlencode($card->getName()) ?>">
                         <img title="<?= $card->getName() ?>" class="w-100" src="<?= $card->getImage() ?>">
                     </a>
                 </div>
@@ -25,6 +25,6 @@
                 </ul>
             </nav>
         </div>
-    </div>
+    </section>
 
 <?php include __DIR__ . '/../footer.html.php' ?>

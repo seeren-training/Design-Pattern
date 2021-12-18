@@ -8,7 +8,7 @@
 </head>
 <body class="d-flex min-vh-100 flex-column ">
 
-<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+<header class="navbar navbar-expand-sm navbar-dark bg-dark">
     <div class="container-fluid">
         <a class="navbar-brand" href="">Magic Card</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -38,6 +38,6 @@
             </ul>
         </div>
     </div>
-</nav>
+</header>
 
 <main class="d-flex flex-grow-1 flex-shrink-0">
