@@ -10,6 +10,7 @@ class CardDaoProxy extends CardDao
         $filename = __DIR__
             . '/../../var/cache/cards'
             . $this->cardOptions->getColor()
+            . $this->cardOptions->getPage()
             . '.cache';
         if (file_exists($filename)) {
             $content = file_get_contents($filename);

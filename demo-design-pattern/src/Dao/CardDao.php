@@ -8,7 +8,13 @@ use App\Model\CardOption;
 
 class CardDao
 {
+
     protected CardOption $cardOptions;
+
+    public function getCardOptions(): CardOption
+    {
+        return $this->cardOptions;
+    }
 
     public function __construct()
     {
@@ -26,10 +32,13 @@ class CardDao
         $content = file_get_contents(
             'https://api.magicthegathering.io/v1/cards?colors='
             . $this->cardOptions->getColor()
+            . '&page='
+            . $this->cardOptions->getPage()
+
         );
         $json = json_decode($content, true);
         foreach ($json['cards'] as $jsonCard) {
-            array_push($cards, $factory->create($jsonCard));
+            $cards[] = $factory->create($jsonCard);
         }
         return $cards;
     }

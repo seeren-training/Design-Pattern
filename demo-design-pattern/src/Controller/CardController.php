@@ -10,7 +10,15 @@ class CardController
 
     public function showAll(): void
     {
-        $cards = (new CardDaoProxy())->fetchCards();
+        $cardDao = new CardDaoProxy();
+        $cardOption = $cardDao->getCardOptions();
+        $cards = $cardDao->fetchCards();
+        if (!$cards) {
+            header('Location: /?' . http_build_query([
+                    'color' => $cardOption->getColor()
+                ]));
+            exit;
+        }
         include __DIR__ . '/../../templates/card/show_all.html.php';
     }
 

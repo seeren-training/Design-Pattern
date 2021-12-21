@@ -11,7 +11,9 @@ class CardOptionBuilder
         CardOption $cardOption,
         array $options): void
     {
-        $cardOption->setColor($options['color'] ?? null);
+        $cardOption
+            ->setColor($options['color'] ?? null)
+            ->setPage((int) ($options['page'] ?? null));
     }
 
 }

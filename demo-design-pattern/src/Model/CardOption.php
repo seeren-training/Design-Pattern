@@ -7,6 +7,19 @@ class CardOption
 
     private ?string $color;
 
+    private ?int $page;
+
+    public function getPage(): ?int
+    {
+        return $this->page;
+    }
+
+    public function setPage(?int $page): CardOption
+    {
+        $this->page = 0 >= $page ? 1 : $page;
+        return $this;
+    }
+
     public function getColor(): ?string
     {
         return $this->color;

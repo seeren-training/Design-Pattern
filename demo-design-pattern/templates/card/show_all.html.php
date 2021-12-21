@@ -13,14 +13,25 @@
         <div class="row my-2">
             <nav>
                 <ul class="pagination justify-content-center">
-                    <li class="page-item">
-                        <a class="page-link" href="#">Previous</a>
+                    <li class="page-item <?= 1 !== $cardOption->getPage() ? : 'disabled'?>" >
+                        <a class="page-link" href="?<?=  http_build_query([
+                            "page" => $cardOption->getPage() - 1,
+                            "color" => $cardOption->getColor(),
+                        ]) ?>">Previous</a>
                     </li>
                     <li class="page-item">
-                        <a class="page-link" href="">1</a>
+                        <a class="page-link" href="?<?=  http_build_query([
+                                "page" => $cardOption->getPage(),
+                                "color" => $cardOption->getColor(),
+                        ]) ?>">
+                            <?= $cardOption->getPage() ?>
+                        </a>
                     </li>
                     <li class="page-item">
-                        <a class="page-link" href="#">Next</a>
+                        <a class="page-link" href="?<?=  http_build_query([
+                            "page" => $cardOption->getPage() + 1,
+                            "color" => $cardOption->getColor(),
+                        ]) ?>">Next</a>
                     </li>
                 </ul>
             </nav>
